@@ -25,6 +25,8 @@
 		4EBD7C152E055458006D3FD2 /* DELETERequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBD7C142E055458006D3FD2 /* DELETERequestView.swift */; };
 		4EBD7C1A2E05707F006D3FD2 /* UnifiedAPIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBD7C192E05707F006D3FD2 /* UnifiedAPIView.swift */; };
 		4EBD7C1C2E058146006D3FD2 /* UploadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBD7C1B2E058146006D3FD2 /* UploadResponse.swift */; };
+		4EBD7C242E059D71006D3FD2 /* PostStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBD7C232E059D71006D3FD2 /* PostStore.swift */; };
+		4EBD7C272E05A5FD006D3FD2 /* FetchPostByUserId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBD7C262E05A5FD006D3FD2 /* FetchPostByUserId.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		4EBD7C142E055458006D3FD2 /* DELETERequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DELETERequestView.swift; sourceTree = "<group>"; };
 		4EBD7C192E05707F006D3FD2 /* UnifiedAPIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedAPIView.swift; sourceTree = "<group>"; };
 		4EBD7C1B2E058146006D3FD2 /* UploadResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadResponse.swift; sourceTree = "<group>"; };
+		4EBD7C232E059D71006D3FD2 /* PostStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStore.swift; sourceTree = "<group>"; };
+		4EBD7C262E05A5FD006D3FD2 /* FetchPostByUserId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPostByUserId.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -163,11 +167,13 @@
 			children = (
 				4EBD7C192E05707F006D3FD2 /* UnifiedAPIView.swift */,
 				4EBD7BFB2E053848006D3FD2 /* GETRequest.swift */,
+				4EBD7C262E05A5FD006D3FD2 /* FetchPostByUserId.swift */,
 				4EBD7BFD2E053DF2006D3FD2 /* POSTrequest.swift */,
 				4EBD7C022E0546B9006D3FD2 /* PUTRequestView.swift */,
 				4EBD7C122E054E88006D3FD2 /* PATCHRequestView.swift */,
 				4EBD7C142E055458006D3FD2 /* DELETERequestView.swift */,
 				4EBD7BEB2E052CC5006D3FD2 /* UploadView.swift */,
+				4EBD7C232E059D71006D3FD2 /* PostStore.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -339,6 +345,8 @@
 				4EBD7C1C2E058146006D3FD2 /* UploadResponse.swift in Sources */,
 				4EBD7BFC2E053848006D3FD2 /* GETRequest.swift in Sources */,
 				4EBD7BEC2E052CC5006D3FD2 /* UploadView.swift in Sources */,
+				4EBD7C272E05A5FD006D3FD2 /* FetchPostByUserId.swift in Sources */,
+				4EBD7C242E059D71006D3FD2 /* PostStore.swift in Sources */,
 				4EBD7BEA2E052C9E006D3FD2 /* ImagePickerView.swift in Sources */,
 				4EBD7BE52E052BE9006D3FD2 /* Model.swift in Sources */,
 			);

@@ -88,13 +88,23 @@ class NetworkManager: ObservableObject {
         }
 
         // MARK: - POST Request
-        func postRequest<T: Decodable>(
+    func postRequest<T: Decodable>(
             url: String,
             parameters: [String: Any],
-            headers: HTTPHeaders? = nil,
             completion: @escaping (Result<T, AFError>) -> Void
         ) {
-            AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
+            AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default)
+                .validate()
+                .responseDecodable(of: T.self) { response in
+                    completion(response.result)
+                }
+        }
+
+        func getRequest<T: Decodable>(
+            url: String,
+            completion: @escaping (Result<T, AFError>) -> Void
+        ) {
+            AF.request(url)
                 .validate()
                 .responseDecodable(of: T.self) { response in
                     completion(response.result)
